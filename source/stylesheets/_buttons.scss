@@ -1,0 +1,12 @@
+%button {
+  color: $white;
+  background-color: $nyu-purple;
+  border: 0;
+  padding: .85em 2em;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $nyu-light-purple;
+  }
+}

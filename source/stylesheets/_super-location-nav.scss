@@ -1,0 +1,127 @@
+.location-nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 1.5em;
+  font-weight: bold;
+}
+
+.location-nav__navigation {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 3em;
+  }
+
+  span .fa-phone {
+    margin-right:0.5em;
+  }
+}
+
+.location-nav-links__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+
+  li {
+    margin: 0 1.5em;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .fa-chevron-down {
+    margin-left: .5em;
+  }
+}
+
+.location-nav__search-icon .fa {
+  font-size: 1.75em;
+  color: $nyu-purple;
+  margin-top: -0.125em;
+  margin-left: 2em;
+}
+
+.location-nav__search-bar {
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+	width: 0%;
+	height: 0%;
+	overflow: hidden;
+
+	-webkit-transition: width 0.4s, height 0.4s;
+	-moz-transition: width 0.4s, height 0.4s;
+	transition: width 0.4s, height 0.4s;
+}
+
+.open.location-nav__search-bar {
+	width: 15%;
+	height: 100%;
+}
+
+.location-nav__search-bar input {
+  position: absolute;
+	top: 10px;
+	right: 0;
+	border: 2px solid $nyu-light-grey;
+  border-radius: 5px;
+	outline: none;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	font-family: inherit;
+  font-size: 1em;
+  padding: .5em;
+	color: #2c3e50;
+}
+.location-nav__search-bar input:focus {
+  border-color: $nyu-teal;
+}
+.location-nav__search-bar input:focus.error {
+  border-color: red;
+}
+
+.location-nav__home {
+  color: $nyu-purple;
+
+  &:hover {
+    color: $nyu-light-purple;
+  }
+}
+
+
+.open.result-list {
+  max-height: 300px;
+  border: 1px solid $nyu-light-grey;
+}
+
+.result-list {
+  max-height: 0;
+  box-sizing: border-box;
+  list-style: none;
+  background: $white;
+  position: fixed;
+  top: 7em;
+  overflow: scroll;
+  text-align: left;
+  max-width: 252px;
+  padding: 0;
+
+  -webkit-transition: height 0.4s;
+  -moz-transition: height 0.4s;
+  transition: height 0.4s;
+
+  li {
+    padding: 1.125em 1em;
+  }
+
+  li:not(:last-of-type){
+    border-bottom: 1px solid $nyu-light-grey;
+  }
+
+  em {
+    color: $nyu-light-purple;
+    font-style: normal;
+  }
+}

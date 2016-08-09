@@ -1,0 +1,64 @@
+.location-header {
+  width: 100%;
+  padding: 5em 0;
+  background-image: url("/images/02_Perlmutter_Hero_Final.jpg");
+}
+
+.location-header h1 {
+  font-size: 48px;
+}
+
+.location-header h1:first-of-type{
+  display: inline-block;
+  font-weight: bold;
+  border-top: 7px solid $nyu-dark-purple;
+}
+
+.location-header h1:nth-of-type(2){
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: normal;
+  width: 65%;
+}
+
+.location-features {
+  background-color: $white;
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -4%;
+  padding: 2.5em 0;
+}
+
+.location-feature {
+  background-color: $white;
+  display: flex;
+  flex-basis: 0;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.location-feature h1 {
+  margin: 0;
+  font-size: 2.25em;
+}
+
+.location-feature p {
+  font-size: 1.125em;
+  font-weight: 400;
+  width: 90%;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.location-feature:not(:last-of-type()) {
+  border-right: 2px solid $nyu-light-grey;
+}
+
+.location-feature button{
+  @extend %button;
+}
