@@ -43,6 +43,10 @@ configure :build do
   # activate :minify_javascript
 end
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+end
+
 set :fonts_dir,  'fonts'
 
 activate :external_pipeline,
