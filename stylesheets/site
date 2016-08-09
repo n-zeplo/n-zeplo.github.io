@@ -1,10 +1,22 @@
 /*
 Error: Invalid CSS after "...(:last-of-type(": expected pseudo_expr, was "))"
-        on line 58 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_location.scss
+        on line 57 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_location.scss
         from line 9 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/site.scss
 
+52:   &__contact-info {
+53:     border-top: 3px solid $nyu-purple;
+54:     border-bottom: 1px solid  $nyu-light-grey;
+55:     padding-bottom: 1em;
+56: 
+57:     p {
+58:       font-size: .85em;
+59:       margin: .25em 0;
+60:     }
+61: 
+62:     span {
+
 Backtrace:
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_location.scss:58
+/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_location.scss:57
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/site.scss:9
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
@@ -161,4 +173,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...(:last-of-type(\": expected pseudo_expr, was \"))\"\A         on line 58 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_location.scss\A         from line 9 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/site.scss"; }
+  content: "Error: Invalid CSS after \"...(:last-of-type(\": expected pseudo_expr, was \"))\"\A         on line 57 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_location.scss\A         from line 9 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/site.scss\A \A 52:   &__contact-info {\A 53:     border-top: 3px solid $nyu-purple;\A 54:     border-bottom: 1px solid  $nyu-light-grey;\A 55:     padding-bottom: 1em;\A 56: \A 57:     p {\A 58:       font-size: .85em;\A 59:       margin: .25em 0;\A 60:     }\A 61: \A 62:     span {"; }
