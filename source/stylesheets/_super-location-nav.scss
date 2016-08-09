@@ -9,6 +9,7 @@
 .location-nav__navigation {
   display: flex;
   align-items: center;
+  width: 73%;
 
   span {
     margin-left: 3em;
@@ -28,6 +29,7 @@
     margin: 0 1.5em;
     letter-spacing: 1px;
     cursor: pointer;
+    flex-shrink: 0;
   }
 
   .fa-chevron-down {
@@ -36,34 +38,50 @@
 }
 
 .location-nav__search-icon .fa {
+  position: absolute;
+  top: 0.35em;
+  right: 0.25em;
   font-size: 1.75em;
-  color: $nyu-purple;
+  color: $white;
   margin-top: -0.125em;
-  margin-left: 2em;
+  padding: .25em;
+  background-color: $nyu-light-grey;
+  border-radius: 8px;
+}
+
+.open.location-nav__search-icon .fa {
+  background-color: $nyu-purple;
 }
 
 .location-nav__search-bar {
-  position: absolute;
-  top: 1em;
-  right: 1.5em;
-	width: 0%;
-	height: 0%;
-	overflow: hidden;
-
-	-webkit-transition: width 0.4s, height 0.4s;
-	-moz-transition: width 0.4s, height 0.4s;
-	transition: width 0.4s, height 0.4s;
+  position: relative;
+  display: inline-block;
+  width: 30%;
 }
 
-.open.location-nav__search-bar {
-	width: 15%;
-	height: 100%;
-}
+// This is for the hidden navigation with the slide open
+// .location-nav__search-bar {
+//   position: absolute;
+//   top: 1em;
+//   right: 1.5em;
+// 	width: 0%;
+// 	height: 0%;
+// 	overflow: hidden;
+
+// 	-webkit-transition: width 0.4s, height 0.4s;
+// 	-moz-transition: width 0.4s, height 0.4s;
+// 	transition: width 0.4s, height 0.4s;
+// }
+
+// .open.location-nav__search-bar {
+// 	width: 15%;
+// 	height: 100%;
+// }
 
 .location-nav__search-bar input {
-  position: absolute;
-	top: 10px;
-	right: 0;
+ //  position: absolute;
+	// top: 10px;
+	// right: 0;
 	border: 2px solid $nyu-light-grey;
   border-radius: 5px;
 	outline: none;
@@ -72,9 +90,10 @@
 	margin: 0;
 	font-family: inherit;
   font-size: 1em;
-  padding: .5em;
+  padding: 1em;
 	color: #2c3e50;
 }
+
 .location-nav__search-bar input:focus {
   border-color: $nyu-teal;
 }
@@ -101,11 +120,10 @@
   box-sizing: border-box;
   list-style: none;
   background: $white;
-  position: fixed;
-  top: 7em;
+  position: absolute;
+  top: 2.25em;
   overflow: scroll;
   text-align: left;
-  max-width: 252px;
   padding: 0;
 
   -webkit-transition: height 0.4s;

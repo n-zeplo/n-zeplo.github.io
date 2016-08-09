@@ -1,6 +1,6 @@
 .nyu-site-nav {
   background-color: $nyu-purple;
-  padding: 2em 1.5em 0;
+  padding: 1.5em 1.5em 0;
   color: $white;
 }
 
@@ -9,11 +9,11 @@
 }
 
 .nyu-site-nav__logo {
-    position: absolute;
-    top: .75em;
-    height: 3em;
-    left: 5%;
-  }
+  position: absolute;
+  top: 1em;
+  height: 2em;
+  left: 5%;
+}
 
 .main-site-nav {
   display: flex;

@@ -12,4 +12,86 @@ body {
   text-align: center;
   font-family: "Benton";
   font-size: 1em;
+  box-sizing: border-box;
 }
+
+.main-area {
+  margin: 4% auto 0;
+  width: 70%;
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+.main-content {
+  display:inline-block;
+  width: 65%;
+  text-align: left;
+  margin-right: 9%;
+
+  p {
+    font-size: 1.125em;
+    line-height: 2.5em;
+    font-weight: 500;
+
+    strong {
+      font-size: 2em;
+    }
+  }
+
+  p:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.side-nav {
+  display: inline-block;
+  text-align: left;
+  width: 20%;
+  vertical-align: top;
+
+  &__contact-info {
+    border-top: 3px solid $nyu-purple;
+    border-bottom: 1px solid  $nyu-light-grey;
+    padding-bottom: 1em;
+
+    p {
+      font-size: .85em;
+      margin: .25em 0;
+    }
+
+    span {
+      font-size: .85em;
+    }
+  }
+
+  h1 {
+    font-size: 1em
+  }
+
+  .fa-phone {
+    margin-right: 2%;
+  }
+}
+
+.share-links__label {
+  display: inline-block;
+}
+
+.share-links__link {
+  display: inline-block;
+  color: $white;
+  background-color: $nyu-light-grey;
+  border-radius: 100%;
+  padding: .5em;
+  height: 1em;
+  width: 1em;
+  margin: 0 .5em;
+}
+
+.share-links__link:first-of-type {
+  margin-left: 1em;
+}
+
+.fa-facebook:before {
+    margin-left: 3px;
+  }
