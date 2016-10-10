@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import "normalize";
-@charset "fonts";
+@import "fonts";
 @import "variables";
 @import "typography";
 @import "buttons";
@@ -8,13 +8,6 @@
 @import "top-nav";
 @import "super-location-nav";
 @import "location";
-
-body {
-  text-align: center;
-  font-family: "Benton";
-  font-size: 1em;
-  box-sizing: border-box;
-}
 
 .main-area {
   margin: 4% auto 0;

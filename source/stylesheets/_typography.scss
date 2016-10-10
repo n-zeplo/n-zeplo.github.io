@@ -3,7 +3,7 @@
 // For some info on modular scales:
 // - https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_modular-scale.scss
 // - modularscale.com
-$rem-base: 20px;
+$rem-base: 18px;
 $base-line-height: $perfect-fourth;
 
 $modular-scale-ratio: $perfect-fourth;
@@ -11,6 +11,13 @@ $modular-scale-base: rem($rem-base);
 
 html {
   font-size: $rem-base; // define the value of 1rem
+}
+
+body {
+  text-align: center;
+  font-size: 1em;
+  font-family: "benton", sans-serif;
+  box-sizing: border-box;
 }
 
 @function rem-to-px($value, $base: $rem-base){
@@ -39,6 +46,7 @@ $scale-list: (
     font-size: rem-to-px($relative-size); // pixel fallback for old browsers
     font-size: $relative-size;
     line-height: $base-line-height;
+    font-family: "benton black", sans-serif;
   }
 }
 
