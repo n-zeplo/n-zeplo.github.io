@@ -1,35 +1,67 @@
-@font-face {
-  font-family: 'Benton';
-  src: url('../fonts/bentonsans-black-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/bentonsans-black-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/bentonsans-black-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-  font-weight: normal;
+@import "bourbon/bourbon";
+
+// For some info on modular scales:
+// - https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_modular-scale.scss
+// - modularscale.com
+$rem-base: 20px;
+$base-line-height: $perfect-fourth;
+
+$modular-scale-ratio: $perfect-fourth;
+$modular-scale-base: rem($rem-base);
+
+html {
+  font-size: $rem-base; // define the value of 1rem
 }
-@font-face {
-  font-family: 'Benton';
-  src: url('../fonts/bentonsans-bold-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/bentonsans-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/bentonsans-bold-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-  font-weight: bold;
+
+@function rem-to-px($value, $base: $rem-base){
+  $v1: strip-units($value);
+  $v2: strip-units($base);
+  @return ($v1 * $v2 * 1px);
 }
-@font-face {
-  font-family: 'Benton';
-  src: url('../fonts/bentonsans-extralight-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/bentonsans-extralight-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/bentonsans-extralight-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-  font-weight: 100;
+
+// - I use SI units to describe my placeholder classes: should do nothing but describe the font scale
+// - leave additional presentational logic to concrete classes
+$scale-list: (
+  ("h1", 4),
+  ("h2", 3),
+  ("h3", 2),
+  ("h4", 1),
+  ("h5", 0),
+  ("h6", -1)
+);
+
+@each $increment in $scale-list {
+  $placeholder-class-name: nth($increment, 1);
+  $scale-step: nth($increment, 2);
+
+  %#{$placeholder-class-name} {
+    $relative-size: modular-scale($scale-step);
+    font-size: rem-to-px($relative-size); // pixel fallback for old browsers
+    font-size: $relative-size;
+    line-height: $base-line-height;
+  }
 }
-@font-face {
-  font-family: 'Benton';
-  src: url('../fonts/bentonsans-light-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/bentonsans-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/bentonsans-light-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-  font-weight: lighter;
+
+h1 {
+  @extend %h1;
 }
-@font-face {
-  font-family: 'Benton';
-  src: url('../fonts/bentonsans-regular-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/bentonsans-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/bentonsans-regular-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-  font-weight: 500;
+
+h2 {
+  @extend %h2;
+}
+
+h3 {
+  @extend %h3;
+}
+
+h4 {
+  @extend %h4;
+}
+
+h5 {
+  @extend %h5;
+}
+
+h6 {
+  @extend %h6;
 }
