@@ -1,27 +1,39 @@
 /*
-Error: Invalid CSS after "...(:last-of-type(": expected pseudo_expr, was "))"
-        on line 58 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_location.scss
-        from line 9 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/site.scss
+Error: File to import not found or unreadable: bourbon/bourbon.
+       Load paths:
+         /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets
+         /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/compass-core-1.0.3/stylesheets
+         Compass::SpriteImporter
+         /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets
+         /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/compass-core-1.0.3/stylesheets
+         Compass::SpriteImporter
+         /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets
+         /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/compass-core-1.0.3/stylesheets
+         Compass::SpriteImporter
+         /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets
+         /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/compass-core-1.0.3/stylesheets
+         Compass::SpriteImporter
+         /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets
+         /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/compass-core-1.0.3/stylesheets
+         Compass::SpriteImporter
+        on line 1 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_typography.scss
+        from line 5 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/site.scss
+
+1: @charset "utf-8";
+2: @import "normalize";
+3: @charset "fonts";
+4: @import "variables";
+5: @import "typography";
+6: @import "buttons";
 
 Backtrace:
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_location.scss:58
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/site.scss:9
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/parser.rb:1105:in `expr!'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:294:in `pseudo_args'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/parser.rb:1103:in `expr!'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:285:in `pseudo'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:153:in `simple_selector_sequence'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:111:in `selector'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:281:in `pseudo'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:159:in `simple_selector_sequence'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:111:in `selector'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/parser.rb:1103:in `expr!'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:427:in `visit_rule'
+/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_typography.scss:1
+/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/site.scss:5
+/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -96,7 +108,6 @@ Backtrace:
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
-/Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/parallel-1.9.0/lib/parallel.rb:451:in `call'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/parallel-1.9.0/lib/parallel.rb:451:in `call_with_index'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/parallel-1.9.0/lib/parallel.rb:422:in `process_incoming_jobs'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/parallel-1.9.0/lib/parallel.rb:404:in `block in worker'
@@ -143,22 +154,22 @@ Backtrace:
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/middleman-cli-4.1.10/bin/middleman:72:in `<top (required)>'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/bin/middleman:23:in `load'
 /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/bin/middleman:23:in `<top (required)>'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
-/Users/nzeplowi/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
-/Users/nzeplowi/.rbenv/versions/2.2.3/bin/bundle:23:in `load'
-/Users/nzeplowi/.rbenv/versions/2.2.3/bin/bundle:23:in `<main>'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/lib/bundler/cli/exec.rb:63:in `load'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/lib/bundler/cli/exec.rb:24:in `run'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/lib/bundler/cli.rb:304:in `exec'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/lib/bundler/cli.rb:11:in `start'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/exe/bundle:27:in `block in <top (required)>'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+/usr/local/lib/ruby/gems/2.3.0/gems/bundler-1.12.3/exe/bundle:19:in `<top (required)>'
+/usr/local/bin/bundle:23:in `load'
+/usr/local/bin/bundle:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...(:last-of-type(\": expected pseudo_expr, was \"))\"\A         on line 58 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_location.scss\A         from line 9 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/site.scss"; }
+  content: "Error: File to import not found or unreadable: bourbon/bourbon.\A        Load paths:\A          /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets\A          /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A          /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets\A          /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A          /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets\A          /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A          /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets\A          /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A          /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets\A          /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/vendor/bundle/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A         on line 1 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/_typography.scss\A         from line 5 of /Users/nzeplowi/Desktop/current-work/nyumc/nyu-prototype/source/stylesheets/site.scss\A \A 1: @charset \"utf-8\";\A 2: @import \"normalize\";\A 3: @charset \"fonts\";\A 4: @import \"variables\";\A 5: @import \"typography\";\A 6: @import \"buttons\";"; }

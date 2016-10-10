@@ -19,31 +19,37 @@ $(document).ready(() => {
     var currentValue = $('.location-nav__search-bar input').val();
     $('.location-nav__search-bar input').removeClass('error');
     $('.location-nav__search-bar .filtered-list').removeClass('open');
+    $('.location-nav__search-icon').removeClass('open');
+
 
     if (currentValue === '') {
       $('.location-nav__search-bar .full-list').addClass('open');
+      $('.location-nav__search-icon').removeClass('open');
     } else if(currentValue.toLowerCase() == 'lung c'){
       $('.location-nav__search-bar .full-list').removeClass('open');
       $('.location-nav__search-bar .filtered-list').addClass('open');
     } else if (currentValue.length >= 7) {
       $('.location-nav__search-bar .full-list').removeClass('open');
       $('.location-nav__search-bar input').addClass('error');
+      $('.location-nav__search-icon').removeClass('open');
     }
   });
 
   $('.location-nav__search-bar input').on('focus', (e) => {
     if($('.location-nav__search-bar input').val() === '') {
         $('.location-nav__search-bar .full-list').addClass('open');
+        $('.location-nav__search-icon').addClass('open');
     }
   });
 
   $(document).on('click', (e) => {
-    let isSearchBarOpen = $('.location-nav__search-bar').hasClass('open');
     let isInsideSearchBar = $(e.target).parent().hasClass('location-nav__search-bar') || $(e.target).parent().hasClass('location-nav__search-icon');
-    if(isSearchBarOpen && !isInsideSearchBar) {
-      $('.location-nav__search-bar').toggleClass('open');
+    if(!isInsideSearchBar) {
+      // $('.location-nav__search-bar').toggleClass('open');
       $('.location-nav__search-bar .full-list').removeClass('open');
       $('.location-nav__search-bar .filtered-list').removeClass('open');
+      $('.location-nav__search-icon').removeClass('open');
+
     }
   });
 });
