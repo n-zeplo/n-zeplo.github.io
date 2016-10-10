@@ -40,8 +40,9 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {// This is where it all goes :)
@@ -100,12 +101,11 @@
 	  });
 	});
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
 
 /***/ },
-/* 1 */,
-/* 2 */,
-/* 3 */
+
+/***/ 18:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10331,4 +10331,5 @@
 
 
 /***/ }
-/******/ ]);
+
+/******/ });
